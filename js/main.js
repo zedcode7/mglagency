@@ -1,4 +1,4 @@
-window.mobileAndTabletcheck = function() {
+/* window.mobileAndTabletcheck = function() {
   var check = false;
   (function(a) {
     if (
@@ -131,7 +131,7 @@ function nextSlide() {
 function prevSlide() {
   showSlide("down");
 }
-/*
+
 function onScroll(e) {
   scrollTop = $(window).scrollTop();
 
@@ -206,7 +206,7 @@ function onScroll(e) {
   } else {
     return false;
   }
-} */
+} 
 
 function changeFounder() {
   if ($("#andrew-container").css("margin-left") === "0px") {
@@ -216,7 +216,7 @@ function changeFounder() {
   }
 }
 
-/*
+
 function handleTouchStart(evt) {
   xDown = evt.touches[0].clientX;
   yDown = evt.touches[0].clientY;
@@ -278,7 +278,7 @@ function handleTouchMove(evt) {
     yDown = null;
   }
 }
-*/
+
 $(document).ready(function() {
   var hash = getHashParams();
 
@@ -487,4 +487,4 @@ $(document).ready(function() {
       }
     });
   });
-});
+});  */
