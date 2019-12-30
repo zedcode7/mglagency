@@ -216,6 +216,7 @@ function changeFounder() {
   }
 }
 
+/*
 function handleTouchStart(evt) {
   xDown = evt.touches[0].clientX;
   yDown = evt.touches[0].clientY;
@@ -277,7 +278,7 @@ function handleTouchMove(evt) {
     yDown = null;
   }
 }
-
+*/
 $(document).ready(function() {
   var hash = getHashParams();
 
