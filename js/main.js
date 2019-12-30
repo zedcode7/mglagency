@@ -131,7 +131,7 @@ function nextSlide() {
 function prevSlide() {
   showSlide("down");
 }
-
+/*
 function onScroll(e) {
   scrollTop = $(window).scrollTop();
 
@@ -155,8 +155,8 @@ function onScroll(e) {
           .next()
           .find("a");
         var nextDiv = $(nextHref.attr("href"));
-//changes
-        if (nextDiv.length > 50) {
+
+        if (nextDiv.length > 0) {
           $("html, body")
             .stop()
             .animate(
@@ -206,7 +206,7 @@ function onScroll(e) {
   } else {
     return false;
   }
-}
+} */
 
 function changeFounder() {
   if ($("#andrew-container").css("margin-left") === "0px") {
