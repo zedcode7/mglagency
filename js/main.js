@@ -145,7 +145,7 @@ function onScroll(e) {
     var treshold = divDifference - $(window).innerHeight();
 
     if (scrollTop > topOfDiv + treshold) {
-      allowScrolling = false;
+      allowScrolling = true;//changes here
 
       setTimeout(function() {
         $("#menu").css("margin-left", "0");
