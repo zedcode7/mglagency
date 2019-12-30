@@ -145,7 +145,7 @@ function onScroll(e) {
     var treshold = divDifference - $(window).innerHeight();
 
     if (scrollTop > topOfDiv + treshold) {
-      allowScrolling = true;//changes here
+      allowScrolling = false;//changes here
 
       setTimeout(function() {
         $("#menu").css("margin-left", "0");
@@ -155,8 +155,8 @@ function onScroll(e) {
           .next()
           .find("a");
         var nextDiv = $(nextHref.attr("href"));
-
-        if (nextDiv.length > 0) {
+//changes
+        if (nextDiv.length > 50) {
           $("html, body")
             .stop()
             .animate(
