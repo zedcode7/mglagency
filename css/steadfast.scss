@@ -1,0 +1,1500 @@
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/33ad62");
+
+  
+@font-face {font-family: 'AmerigoBT-RomanA';src: url('webfonts/33AD62_0_0.eot');src: url('webfonts/33AD62_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33AD62_0_0.woff2') format('woff2'),url('webfonts/33AD62_0_0.woff') format('woff'),url('webfonts/33AD62_0_0.ttf') format('truetype'),url('webfonts/33AD62_0_0.svg#wf') format('svg');}
+  
+@font-face {font-family: 'AmerigoBT-BoldA';src: url('webfonts/33AD62_1_0.eot');src: url('webfonts/33AD62_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33AD62_1_0.woff2') format('woff2'),url('webfonts/33AD62_1_0.woff') format('woff'),url('webfonts/33AD62_1_0.ttf') format('truetype'),url('webfonts/33AD62_1_0.svg#wf') format('svg');}
+ 
+
+$brightBlue: #309dff; 
+$steadfastBlue: #002986; 
+$fontSize: #00163e;
+$menuPadding: 42px;
+ 
+$backgroundColor: #dfdfdf; 
+$menuWidth: 300px; 
+$navy: #15294d; 
+ 
+ 
+html, body {
+	height: 100%;
+	width: 100%;
+
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+
+} 
+
+::-webkit-scrollbar {
+
+	//background:transparent;
+	width:0px;
+	display: none;
+}
+ 
+body {
+	position: relative;
+	font-family: 'AmerigoBT-RomanA', 'Helvetica', san-serif;
+	background: #dfdfdf;
+	max-width: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;	
+	overflow-x: hidden;
+} 
+
+#andrew {
+	min-height: 100%;
+}
+ 
+.logo {
+	img {
+		max-width: 150px;
+	}
+}
+
+
+h2 {
+	font-size: 290%;
+}
+
+
+#menu {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	height: 42px;
+	transition: all 0.75s ease-out;
+	padding: 1em;
+	
+	
+	background:  url('../img/steadfast-wording.png') center no-repeat $backgroundColor;
+	background-size: 85px;
+	
+	
+	.emblem {
+		float: left; 
+		max-width: 20px;
+		position:absolute;
+		top:10px;
+	}
+	
+	.social {
+		a {
+			text-align: center;
+		}
+	}
+	
+	.toggle {
+		display: block;
+		float: right;
+		width: 32px;
+		
+		.bar {
+			height: 2px;
+			width: 100%;
+			background: $steadfastBlue;
+			display: block;
+			margin-bottom: 4px;
+		}
+		
+		#menu-toggle {
+			position:absolute;
+			top: 14px;
+			width: 24px;
+		}
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	
+	
+	.menu-content {
+		overflow: hidden;
+		height: 0;
+		position: absolute;
+		left: 0;
+		width: 100vw;
+		background: white;
+		transition: all 1s ease-out;
+		
+		
+		ul {
+			padding: 0;
+			padding-bottom: 2em;
+			display: block;
+			background: white;
+			margin-top: 30px;
+			text-align: center;
+			margin-bottom: 0;
+			
+		}
+	}
+	
+	.menu-size-box {
+		a {
+			display: inline-block;
+		}
+		
+	}
+	
+	
+	.disclaimer {
+		img {
+			margin-bottom: 3em;
+			max-width: 100px;
+		}
+	}
+	
+	&.open {
+		
+		.menu-content {
+			height: auto;
+			top: 42px;
+			transition: all 1s ease-out;
+		    
+		}
+		
+		.disclaimer {
+			font-size: 70%;
+			text-align: center;
+			padding: 1.5em;
+			
+			p {
+				margin-bottom: 0; color: $steadfastBlue;
+			}
+			
+			img {
+				max-width: 80px;
+				margin-top: 2em;
+				margin-bottom: 2em;
+			}
+		}
+	}
+}
+
+
+
+
+.filter {
+	position: absolute;
+	background: url('../img/filter.png') center no-repeat;
+	//background-position-x: 100px;
+	background-size: cover; 
+	min-height: 100%;
+	top: 0;
+	z-index: 15;
+	mix-blend-mode: multiply;
+	width: 100%;
+}
+
+
+#start, #founders, #who-we-work-with, #approach,  #contact-us, #faq {
+
+	padding-top: 3em;
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+	overflow-x: hidden;
+	max-width: 100%;
+
+}
+
+
+.disclaimer-services {
+	padding-bottom: 2em;
+	font-size: 85% !important;
+}
+
+
+.alternate-menu{
+
+	background: url('../img/menu-selector-white.png') right center no-repeat #fff;
+	background-size: 8px;
+
+}
+
+
+.main-menu {
+	list-style: none;
+	padding-left: 42px;
+	margin-bottom: 3em;
+	
+	
+	li {
+		
+		margin-bottom: 0;
+		
+		a {
+			color: $steadfastBlue;
+			display: block;
+			padding: .5em 0;
+			font-size: 18px;
+		}
+	}
+
+}
+
+
+.divider {
+	width: 5em;
+	height: 3px;
+	background: $brightBlue;
+}
+
+
+.wrap {
+	
+	h2 {
+	margin-bottom: 0 !important;		
+	}
+
+
+	.main-text {
+	
+		position:absolute;
+		z-index: 16;
+		background: transparent;
+		
+		p {
+			overflow: hidden;
+			display: none;
+			height: 0;
+			transition: all ease-in .5s;
+			font-size: 1em;
+		
+			
+			&.active {
+				display: block;
+				height: auto;
+			}
+		}
+	}
+	
+}
+
+.content {
+	color: white;
+	min-height:100vh;
+
+	h2 {
+		font-size: 3em;
+	}
+	
+	p {
+		font-size: 1.2em;
+		margin-bottom: 2em;
+	}
+		
+	p.lead {
+		font-size: 1.5em;
+		margin-top: 1em;
+
+		&.active {
+			height: 120px !important;
+		}
+	}
+
+	&#home {
+		background: url('../img/we-believe.jpg') center;
+		background-size: cover;
+	}
+
+	&#dreams {
+		background:url('../img/transparency.jpg') center;
+		background-size: cover;
+	}
+		
+	&#transparency {
+		background: url('../img/eddie-klaus.jpg') center;
+		background-size: cover;
+	}
+		
+
+}
+
+.emphasis {
+	color: $brightBlue;
+	
+}
+
+#founders {
+
+	position: relative;
+	min-height: 100%;
+
+	width: 100%;
+
+    
+    h2 {
+	    margin-bottom: 1em;
+	    background-color: $backgroundColor;
+    }
+    
+    a{
+	    color:black;
+	    
+	    &:hover{
+		    color:$steadfastBlue;
+	    }
+	    
+    }
+	
+	.content-slide-founder {
+		width: 100%;
+		margin: 0;
+		min-height: 100%;
+		background: #dfdfdf;
+		overflow-x: hidden;
+			
+	}
+	
+	.col-sm-4 {
+		text-align: center;
+	}
+	
+	img {
+	
+		max-height: 100%;
+		max-width: 100%;
+		margin-bottom: 2em;
+		position:relative;
+
+		display: block;
+	}
+
+	#jonathan {
+		img{
+			right: 30px;
+		}
+	}
+
+	#andrew {
+		img{
+			right:-45px;
+		}
+
+	}
+
+	#andrew2 {
+		img{
+			right:-45px;
+		}
+
+
+	}
+	
+	.row{
+		.col-sm-1{
+			padding-top:20em;
+
+			span {
+				color: $steadfastBlue;
+				cursor: pointer;
+			}
+		}
+	}
+
+
+	
+	
+}
+
+
+.changer {
+	display:none;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100%;
+    -moz-transition: top 0.9s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -o-transition: top 0.9s cubic-bezier(0.7, 0.01, 0.3, 1);
+    -webkit-transition: top 0.9s cubic-bezier(0.7, 0.01, 0.3, 1);
+    transition: top 0.9s cubic-bezier(0.7, 0.01, 0.3, 1);
+    background: #dfdfdf;
+}
+
+
+section {
+	position: relative;
+	
+}
+
+.menu-size-box {
+	font-size: 170%;
+}
+ 
+.content-slide {
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 100%;
+	width: 100%;
+	
+	overflow: hidden;
+	// this would be vendor prefixed:
+	transition: height 0.9s ease-in-out;
+	
+	
+	&:nth-child(1) {
+		z-index: 9;
+		background: white;
+	}
+	&:nth-child(2) {
+		z-index: 8;
+		background: #dfdfdf;
+	}
+	&:nth-child(3) {
+		z-index: 7;
+		background: #dfdfdf;
+	}
+	&:nth-child(4) {
+		z-index: 6;
+		background: #dfdfdf;
+	}
+	&:nth-child(5) {
+		z-index: 5;
+		background: #dfdfdf;
+	}
+	
+	
+	&.active {
+		z-index: 11 !important;
+	}
+} 
+
+
+
+#who-we-work-with {
+	min-height: 100%;
+	
+	h2 {
+		margin-bottom: 1em;
+	}
+}
+
+#approach {
+	
+	min-height: 100%;
+
+	h2 {
+		margin-bottom: 1em;
+	}
+	
+	p, li {
+		font-size: 120%;
+	}
+	
+	.col-xl-10 {
+		padding: 0;
+		margin-top: 2em;
+
+		.col-sm-4 {
+			padding:0;
+			
+			&:nth-child(odd) {
+				
+				.plan-tile:first-child {
+					background: $brightBlue !important;			
+				}
+				
+				.price {
+					color: $navy;
+				}
+				
+				.plan-tile:nth-child(2) {
+					.price {
+						color: $brightBlue !important;
+					}
+				}
+				
+			}
+			
+			&:nth-child(even) {
+				.plan-tile:nth-child(2) {
+					background: $navy;
+					
+					.price {
+						color: $brightBlue;
+					}
+					
+				}
+				
+				.plan-tile:nth-child(1) {
+					
+					
+					background: $brightBlue;
+					
+					.price {
+						color: $navy; ;
+					}
+				}
+			}	
+		}
+		
+		.plan-tile {
+			
+			
+			background: #15294d;
+			min-height:160px;
+			padding:1em 2em 1em 2em;
+			
+			p {
+				display: none;
+				color: white;
+				font-size: 15px;
+				margin-top: 2em;
+			
+			}	
+
+			&:hover {
+				
+				p {
+					transition: all .9s;
+					//display: block !important;
+					
+				}
+
+			
+				span{
+					color: $brightBlue;
+				}
+				
+				
+				
+			}
+			
+			h3 {
+				color: white;
+				margin-bottom: 0;
+			}
+			
+			.price {
+				color: $brightBlue;
+				margin-bottom: 2em;
+			}
+			
+			p {
+				color: white;
+			}
+			
+			span{
+				color:$brightBlue;	
+			}
+		}
+		
+	}
+	
+	.few-words {
+		margin-top: 2em;
+		
+		li {
+
+			border:solid;
+			border-color:$brightBlue;
+			border-width: 0 0 0 3px;
+			padding-left: 1em;
+		}
+
+	}
+}
+
+
+.more-services {
+	font-size: small;
+	margin-top: 2em;
+}
+
+
+
+.form-control {
+	border-radius: 0;
+	
+	
+}
+
+.words {
+	h2 {
+		margin-top: 3em;
+	}
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 3em;
+	
+	li {
+		margin-bottom: 1em;
+	}
+}
+
+
+
+#contact-us {
+	
+	min-height: 100%;
+	width: 100%;
+    background: url('../img/contact-us-back.png') center top no-repeat;
+	
+	
+	h2 {
+		color:white;
+		margin-bottom: 1em;
+
+
+	}
+	
+	form{
+
+		color:white !important;
+
+		.form-control {
+
+			color: white;
+		}
+
+		input{
+			
+			font-family:  'AmerigoBT-RomanA', 'Helvetica', san-serif !important;
+			padding: 1em .5em 1em .5em;
+			margin-bottom:1em;
+			border:solid;
+			border-color:white;
+			border-width: 0 0 1px 0;
+			background: transparent;
+
+			
+			&.submit {
+				border: none;
+				color: white;
+			}
+			
+		}
+
+		textarea {
+			color:black !important;
+		}
+		
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #464a4c !important;
+		}
+
+		::-moz-placeholder { /* Firefox 19+ */
+		  color: #464a4c !important;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		  color: #464a4c !important;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		  color: #464a4c !important;
+		}
+
+		
+
+	}
+	
+
+
+	p{
+		color: white;
+		font-size: 120%;
+	}
+	
+	
+}
+
+ h2 {
+	margin-bottom: 3em;
+}
+
+.submit:after {
+	content: '\f105';
+	position: absolute;
+    font-family: 'FontAwesome';
+	width: 2em;
+	
+}
+
+
+#faq {
+	min-height: 100%;
+}
+
+
+.faqs {
+	
+	font-size: 120%;
+	padding-bottom: 5em;
+	
+	h3 {
+		color: white;
+		margin-bottom: 1.2em
+	}
+
+	
+	
+	.faq-tile {
+		
+		min-height:150px;
+		
+		p {
+			display: none;
+			color: white;
+			font-size: 14px;
+			margin-top: 2em;
+		
+		}		
+	}
+	
+	.faq-column:nth-child(odd) {
+		.faq-tile{
+			background: $brightBlue;
+
+			span {
+				color:$navy;
+			}
+		}
+
+		.faq-tile:nth-child(odd) {
+			background: $navy;
+			span {
+				color:$brightBlue;
+			}
+		}
+
+	}
+
+	.faq-column:nth-child(3){
+		.faq-tile{
+			background: $navy;
+
+			span {
+				color:$brightBlue
+			}
+		}
+		.faq-tile:nth-child(odd){
+			background: $brightBlue;
+
+			span {
+				color:$navy;
+			}
+		}
+
+
+	}
+
+	.faq-column:nth-child(even) {
+		.faq-tile {
+			background: $brightBlue;
+
+			span {
+				color:$navy;
+			}
+		}
+		
+		
+		.faq-tile:nth-child(even) {
+			background: $navy;
+
+			span {
+				color:$brightBlue;
+			}
+		}
+	}
+
+	
+	.col-sm-4 {
+		margin:0;
+		padding:0;
+	}
+
+
+	p{
+		font-size: 80%;
+	}
+	
+}
+
+.faq-tile {
+	
+	padding: 1em;
+
+	h3{
+		font-size: 120%;
+		margin-bottom:0;
+	}
+}
+
+
+.small-gutter {
+	
+	margin: 0;
+	padding: 0;
+	
+	img{
+		width:100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+button {
+	background: none;
+	border: none;
+}
+
+
+.small-menu {
+		
+	visibility: hidden;
+}
+
+.social {
+		.login{
+			
+			display: block;
+			right: -2em;
+		}
+		.facebook {
+			display: block;
+			padding-top: 2em;
+		}
+}
+
+
+@media screen and (max-width: 320px){ //iphone 5
+
+	.main-text{
+		h2{
+			padding-top: 2em !important;
+		}
+	}
+	
+
+}
+
+@media screen and (max-width: 415px){ //phones
+
+	.main-text{
+		h2{
+			padding-top: 4em;
+		}
+	}
+
+
+}
+
+@media (min-width:768px) {
+	
+	#menu {
+		
+		background:  url('../img/steadfast-wording.png') center no-repeat #fff;
+		background-size: 100px;
+	}
+	
+	
+	.content {
+	
+		padding-top: 25vh;
+
+	}
+	
+	
+	
+	.content-slide-founder {
+			position: absolute; 
+	}
+
+	
+	.changer {
+		display: block;
+		position: absolute;
+		text-align: center;
+		font-size: 150%;
+		top:50%;
+
+		right:0;
+		
+	}
+	
+
+	#founders {
+		
+		.andrew-bio {
+			margin-left: 5.157em;
+			padding-top:5em;
+		}
+
+		.jonathan-bio {
+			padding-top:5em;
+
+
+			span {
+				display: inline-block;
+				padding-right: 1em;
+				padding-top: .5em;
+				color: $brightBlue;
+				background: url('/img/founders-arrow.png') top right no-repeat;
+				
+			}
+			
+			
+		}
+
+		.andrew-bio {
+			span {
+				display: inline-block;
+				padding-right: 1em;
+				padding-top: .5em;
+				color: $brightBlue;
+				background: url('/img/founders-arrow.png') top right no-repeat;
+			}
+
+		}
+	}
+
+
+	#andrew-container {
+		z-index: 10;
+	}
+	
+	.small-gutter {
+		padding: 0 15px;
+		
+		margin-top: 12px;
+		
+		.col-sm-4 {
+			padding-left: 0;
+			padding-right: 12px;
+		}
+		
+		.col-sm-8 {
+			padding-left: 0px;
+		}
+		
+		img {
+			margin-bottom: 0;
+		}
+	
+		
+	}
+
+	.disclaimer-services {
+		padding-left: 3em;
+	}
+	
+
+	.faqs {
+	
+	
+		.faq-column:nth-child(3) {
+			.faq-tile{
+				background: $brightBlue;
+
+
+			}
+
+			.faq-tile:nth-child(odd) {
+				background: #15294d;
+
+				span{
+					color: $brightBlue !important;
+				}
+
+			}
+
+		}
+	}
+
+	
+}
+
+@media (min-width:1024px){
+
+
+	#menu {
+			overflow-x: hidden;
+
+	}
+
+	
+
+}
+
+
+@media (min-width:1025px) {
+
+	.social {
+		.login{
+			padding-left: 0em;
+
+		}
+		.facebook{
+			padding-top:0em;
+		}
+	}
+
+	
+	.wrap {
+		.main-text {
+			p {
+				height: auto;
+				display: block;
+				overflow: visible;
+			}
+		}
+		
+	}
+	
+	
+	
+	.small-menu {
+		
+		visibility: visible;
+		position: fixed;
+		top: 2.5em;
+		z-index: 100;
+		background: white;
+		padding: .5em 1em .5em 2em;
+		
+		img{
+			width: 70% !important;
+		}
+	}
+	
+	#menu {
+		margin-left: -100%;
+	
+	
+		.logo {
+			display: block;
+		}
+		
+		img {
+			margin-bottom: 3em;
+		}
+		
+		.emblem{
+			position:relative;
+		}
+		
+		.toggle {
+			display: none;
+		}
+		
+		a.login, a.facebook {
+			padding-left: 42px;
+			display: block;
+			margin-bottom: 1em;
+			font-size: 18px;
+			text-align: center;
+		
+		}
+		
+		
+		.disclaimer {
+			margin-top: 2em;
+			padding-top: 2em;
+			padding-left: 42px;
+			color: $steadfastBlue;
+			font-size: 11px;
+		    max-width: 250px;
+		}
+		
+		.bar {
+			width: 80px;
+			height: 2px;
+			background: #dadada;
+			margin-left: 42px;
+		}
+		
+		
+		.menu-content { 
+			height: auto;	
+			
+			ul {
+				text-align: left;
+				padding-left: $menuPadding;
+			}
+			
+			.disclaimer {
+				text-align: left;
+			}
+		}
+	}
+	
+	.content {
+	
+		padding-top:25vh;
+		
+		float: right;
+		padding-left: 400px;
+	}
+	
+	.content-slide {
+		width: 100%;
+	}
+	
+	
+	#founders {
+		padding-left: 0;
+	
+		.changer {
+			font-size: 1em;
+		}
+	
+		.col-sm-5, .changer {		
+			
+		}
+	}
+
+	
+	#start, #founders, #who-we-work-with, #approach,  #contact-us, #faq {
+		width: calc(100vw - 290px);
+		float: right;
+		position: relative;	
+		padding-left: 3em;
+		
+		section {
+			min-height: 100%;
+		}
+		
+		.content {
+			width: 100%;
+		}
+	}
+	
+	#start{
+		
+		width:100%;
+		padding-left: 0;
+		
+	}
+	
+	#approach {
+		padding-left: 0;
+		
+		.col-md-8, .col-sm-9 {
+			padding-left: 3em;
+		}
+	}
+	
+	#faq {
+		padding-left:0;
+		
+		h2 {
+			padding-top: 1em;
+		}
+	}
+	
+	
+	
+	#menu {
+		
+		padding-left: 2em;
+		padding-top: 4em;
+		position: fixed;
+		background: white;
+		height: 100%;
+		z-index: 1000;
+
+		
+		width: 290px !important;
+		padding: 40px;
+		padding-right: 0;
+		overflow: scroll;
+		
+		
+		.menu-content {
+			width: 290px;
+			
+			ul {
+				margin-top: 0;
+			}
+			
+			.social {
+				a {
+					text-align: left;
+				}
+			}
+		}	
+		
+			
+		a {
+			color: $steadfastBlue;
+			
+			&.active {
+				background:url('../img/menu-select-gray.png') right center no-repeat;
+				background-size: 8px;
+
+			}
+			
+					
+		}
+		
+		#contact-menu.active, #faq-menu.active {
+			background:url('../img/menu-selector-blue.png') right center no-repeat;
+			background-size: 8px;
+		}
+		
+		/*#faq-menu.active {
+			background:url('../img/menu-selector-bright-blue.png') right center no-repeat;
+			background-size: 8px;
+		} */
+		
+	}
+	
+	#founders{
+		
+		float: right;
+		padding: 0;
+		
+		section{
+			min-height: 80%;	
+		}
+	
+		img {
+			position: absolute;
+			margin-top: 10%;
+		}
+		
+		.bottom {	
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+
+		}
+		
+		p {
+			font-size: 85%;
+		}
+		
+		a {
+			color: $brightBlue;
+		}
+		
+		
+	}
+	
+	
+	
+	.plans {
+		display: flex;
+	}
+}
+
+
+@media (min-width:1350px) {
+
+	.content {
+	
+		padding-top:35vh;
+
+		h2 {
+			font-size: 4em;
+
+		}
+	}
+	
+	#contact-us {
+
+		h2 {
+
+			margin-top:3em;
+
+		}
+	
+	}
+	
+}
+
+@media (min-height: 700px) {
+	
+	
+	#approach {
+	 .col-xl-10 {	
+		.col-sm-4 {
+			&:nth-child(odd) {
+				
+				.plan-tile:first-child {
+					background: $brightBlue !important;			
+				}
+				
+				.price {
+					color: $navy;
+				}
+				
+				.plan-tile:nth-child(2) {
+					.price {
+						color: $brightBlue !important;
+					}
+				}
+				
+			}
+			
+			&:nth-child(even) {
+				.plan-tile:nth-child(2) {
+					background: $brightBlue;
+					
+					.price {
+						color: $navy;
+					}
+					
+				}
+				
+				.plan-tile:nth-child(1) {
+					
+					
+					background: $navy;
+					
+					.price {
+						color: $brightBlue; 
+					}
+				}
+			}
+		}
+		
+		}
+	}
+	
+}
+
+@media (min-width:1500px) {
+	
+	#founders {
+		
+		p {
+			font-size: 100% !important;
+		}
+	}
+	
+	#founders {
+		.col-xl-5 {
+			max-width: 40%;
+		}		
+	}
+
+	#founders {
+
+		.row{
+			.col-sm-1{
+				padding-top:27em;
+			}
+		}
+
+		.jonathan-bio {
+
+			padding-top:12em;
+
+		}
+
+		.andrew-bio {
+
+			padding-top:13em;
+			margin-left: 7em;
+
+		}
+
+	}
+	
+	#founders {
+		.col-sm-4, .col-sm-7, .changer {		
+			
+			
+			.bio {
+				top: 50%;
+				margin-top:-25%;
+				position: absolute;
+			}
+		
+		
+		}
+	}
+
+	
+}
+
+@media (min-height: 920px) {
+	
+	
+	#founders {
+		.col-sm-4, .col-sm-7, .changer {		
+			
+			
+			.bio {
+				top: 50%;
+				margin-top:-40%;
+				position: absolute;
+			}
+		
+		
+		}
+	}
+
+	
+}
+
+@media (min-width:1900px) {
+	
+	.content {
+	
+		padding-top:3vh;
+
+	}
+
+	.wrap{
+
+		padding-top:23% !important;
+		
+
+	}
+
+	#founders {
+
+		#jonathan {
+
+			padding-top:0em;
+
+		}
+
+		#andrew {
+
+			padding-top:0em;
+
+		}
+
+		.andrew-bio{
+			padding-top:23em;
+			margin-left: 8.4em;
+		}
+		.jonathan-bio{
+			padding-top:20em;
+		}
+
+		.row{
+			.col-sm-1{
+				padding-top: 31em;
+			}
+		}
+
+	}
+
+}
+
+
+@media (min-width:2100px) {
+
+	.wrap{
+
+		font-size: 140%;
+	}
+
+}
+
+
+
